@@ -1,0 +1,17 @@
+---
+    import FooterLink from './FooterLink.astro';
+    interface Props{
+        name: string,
+        email: string,
+        phone?: string
+    }
+
+    const {name, email}:Props = Astro.props;
+---
+
+<li class="flex flex-col">
+    <span class="text-lg tracking-tight border-b border-burgundy-900/75 pr-2 w-fit">{name}</span>
+    <div class="flex space-x-2 pl-2">
+        <FooterLink isBlank={false} URL=`mailto:${email}` text="Email" />
+    </div>
+</li>
