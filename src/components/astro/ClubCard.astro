@@ -1,0 +1,29 @@
+---
+    interface Props{
+
+        clubImg: ImageMetadata,
+        clubName: string,
+        leaderImg?: ImageMetadata,
+        leaderName?: string,
+        nextMeet: string,
+        description: string,
+        URL: string
+    }
+
+    import { Image } from "astro:assets";
+
+    const {clubImg, clubName, leaderImg, leaderName, nextMeet, description, URL}: Props = Astro.props;
+---
+
+<a href={URL} class="group aspect-square w-80 relative rounded-lg overflow-hidden hover:scale-105 transition-transform ease-in duration-200">
+    <Image src={clubImg} alt="Club Logo" class="h-full aspect-square" />
+    <div class="absolute bg-gradient-to-t from-[#0C080A]/90 from-40% to-transparent top-0 w-full h-full flex flex-col justify-end px-4 py-2">
+        <span class="text-2xl font-mono tracking-wide group-hover:text-burgundy-900 transition-colors ease-in duration-200">{clubName}</span>
+        <!-- <div class="flex items-center">
+            <Image src={leaderImg} alt="Leader PFP" class="rounded-full aspect-square w-6 h-fit mr-1" />
+            <span class="tracking-tight text-lg">{leaderName}</span>
+        </div> -->
+        <span class="tracking-tight">Next meeting: {nextMeet}</span>
+        <p class="tracking-tighter text-sm line-clamp-2 indent-2">{description}</p>
+    </div>
+</a>

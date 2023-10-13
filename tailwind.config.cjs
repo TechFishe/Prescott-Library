@@ -4,10 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			height: {
-				'fullscreen': "calc(100vh - 7rem)"
+				'fullscreen': "calc(100vh - 8rem)"
 			},
 			minHeight: {
-				'fullscreen': "calc(100vh - 7rem)"
+				'fullscreen': "calc(100vh - 8rem)"
+			},
+			maxHeight: {
+				'fullscreen': "calc(100vh - 8rem)"
 			},
 			colors: {
 				'burgundy': {

@@ -78,7 +78,7 @@ function MenuLink(props: MenuLinkProps){
                 {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
                 <path d={props.icon}/>
             </svg>
-            <a href={`https://${props.URL}`} target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-lg hover:underline hover:decoration-burgundy-800 underline-offset-2 pr-1">{props.text}</a>
+            <a href={`https://${props.URL}`} target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-lg hover:underline hover:decoration-burgundy-800 underline-offset-2">{props.text}</a>
         </li>
     )
 }
