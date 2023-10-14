@@ -27,6 +27,9 @@ module.exports = {
 					'950': '#4c030f',
 				},
 				
+			},
+			screens: {
+				"3xl": "1792px"
 			}
 		},
 	},
