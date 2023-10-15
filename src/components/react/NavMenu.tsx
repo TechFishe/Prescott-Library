@@ -29,11 +29,11 @@ export default function NavMenu(){
     return(
         <div className="ml-8">
             <button onClick={() => handleMenu()} className="border border-transparent hover:border-[#E9EDDE]/25 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1.25rem" fill="currentColor" viewBox="0 0 448 512" className="group-hover:text-burgundy-900 transition-colors ease-in">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" className="group-hover:text-burgundy-900 transition-colors ease-in mdTall:h-5 h-8">
                     {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
                     <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
                 </svg>
-                <span className="text-2xl font-semibold">Menu</span>
+                <span className="text-2xl font-semibold hidden mdTall:block">Menu</span>
             </button>
             <section className={`absolute top-0 h-screen backdrop-blur-sm z-50 w-screen right-0 rounded-b-lg px-2 space-y-1 ${menuOpen ? "" : "hidden"}`}>
                 <div className="float-right w-2/3 mdTall:w-1/3 2xl:w-1/6 h-screen bg-[#0C080A]/90 px-1 flex flex-col">

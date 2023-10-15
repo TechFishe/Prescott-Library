@@ -24,6 +24,6 @@ export default function TitleText(props: Props){
     }, []);
 
     return(
-        <h1 className="h-fit w-fit uppercase text-burgundy-900 self-center text-7xl font-bold tracking-wide">{text}</h1>
+        <h1 className="h-fit w-fit uppercase text-burgundy-900 self-center mdTall:text-7xl text-5xl font-bold mdTall:tracking-wide">{text}</h1>
     )
 }
