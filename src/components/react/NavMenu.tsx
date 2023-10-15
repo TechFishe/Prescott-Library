@@ -35,8 +35,8 @@ export default function NavMenu(){
                 </svg>
                 <span className="text-2xl font-semibold">Menu</span>
             </button>
-            <section className={`absolute top-0 h-screen backdrop-blur-sm z-10 w-screen right-0 rounded-b-lg px-2 space-y-1 ${menuOpen ? "" : "hidden"}`}>
-                <div className="float-right md:w-1/3 2xl:w-1/6 h-screen bg-[#0C080A]/90 px-1 flex flex-col">
+            <section className={`absolute top-0 h-screen backdrop-blur-sm z-50 w-screen right-0 rounded-b-lg px-2 space-y-1 ${menuOpen ? "" : "hidden"}`}>
+                <div className="float-right w-2/3 mdTall:w-1/3 2xl:w-1/6 h-screen bg-[#0C080A]/90 px-1 flex flex-col">
                     <section className="flex justify-between items-center h-fit border-b border-[#E9EDDE]/50 py-1">
                         <span className="text-4xl font-bold tracking-wide uppercase text-burgundy-900">{topText}</span>
                         <button onClick={() => handleMenu()} className="border border-transparent hover:border-[#E9EDDE]/25 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex items-center">
