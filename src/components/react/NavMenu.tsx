@@ -27,7 +27,7 @@ export default function NavMenu(){
     }
 
     return(
-        <div className="ml-8">
+        <div>
             <button onClick={() => handleMenu()} className="border border-transparent hover:border-[#E9EDDE]/25 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" className="group-hover:text-burgundy-900 transition-colors ease-in mdTall:h-5 h-6">
                     {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
