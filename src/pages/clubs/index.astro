@@ -2,6 +2,11 @@
     //#region 
         import NHD from "@assets/nhd.png";
         import Books from "@assets/books.jpg";
+
+        import NounBooks from '@assets/noun-books-708302.svg';
+        import NounDragon from '@assets/noun-dragon-4657103.svg';
+        import NounPenPaper from '@assets/noun-pen-paper-2903999.svg';
+        import NounSpeech from '@assets/noun-speech-5816268.svg';
     //#endregion
 
     import Layout from '@layouts/Layout.astro';
@@ -11,14 +16,14 @@
 
 <Layout title="Clubs" bigText="Clubs">
     <main>
-        <section class="grid px-12 w-full 3xl:grid-cols-5 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-16 xl:gap-y-12 2xl:gap-y-0 justify-items-center grid-flow-row min-h-fullscreen py-1">
-            <ClubCard URL="/clubs/dnd" clubImg={NHD} clubName="Dnd", nextMeet="10/16/23" description="Played Dungeons & Dragons before? New to the game? Come and form an adventuring party who will explore fantasy worlds together as they embark on epic quests." />
+        <section class="grid px-12 w-full 3xl:grid-cols-5 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-16 xl:gap-y-12 justify-items-center grid-flow-row min-h-fullscreen py-1">
+            <ClubCard URL="/clubs/dnd" clubImg={NounDragon} clubName="Dnd", nextMeet="10/16/23" description="Played Dungeons & Dragons before? New to the game? Come and form an adventuring party who will explore fantasy worlds together as they embark on epic quests." />
             <ClubCard URL="/clubs/nhd" clubImg={NHD} clubName="NHD", nextMeet="10/16/23" description="National History Day is a national research-based history competition. There are several categories in which students can compete, including a museum-type exhibit, a web page, a documentary, a research paper, and a historical performance. Students pick a topic that pertains to the annual theme, conduct extensive research on their topic, and present their findings in one of the project formats. Students may participate individually or a as part of a group of up to five members." />
-            <ClubCard URL="/clubs/book-club" clubImg={NHD} clubName="Book Club", nextMeet="11/06/23" description="Each month the club reads a new selection and then meets to discuss the book. Books are chosen from student and staff suggestions. We read popular titles and new releases. Most of the books chosen are Young Adult fiction; occasionally we read adult titles and non-fiction. Book club members also participate in special events like author visits, lunch meetings and movie screenings." />
-            <ClubCard URL="/clubs/guys-read" clubImg={NHD} clubName="Guys Read", nextMeet="11/13/23" description="NHD is an academic competition for elementary and secondary school students. It focuses on historical research, interpretation, and creative expression. Students produce projects such as exhibits, documentaries, papers, performances, or websites related to a specific historical theme, which they present at local, state, and national competitions." />
-            <ClubCard URL="/clubs/writers-block" clubImg={NHD} clubName="Writers Block", nextMeet="10/16/23" description="Writer’s Block is for students who are interested in sharing their writings with others. Members meet to listen, discuss, and edit. Also, members have access to the Writer’s Block Blog where they can share ideas and find information on writing. You will participate in special events like author visits and lunch meetings." />
-            <ClubCard URL="/clubs/forensics" clubImg={NHD} clubName="Forensics", nextMeet="10/23/23" description="The Speech team travels to area high schools to compete. There are a total of sixteen categories ranging from oral interpretation to acting to public speaking. As part of the Wisconsin Interscholastic Speech and Dramatic Arts Association, the team has two goals: To provide a significant training ground for the development of students’ abilities in public speaking and in the oral interpretation of literature and to provide multiple opportunities for students to practice and share their skill development." />
-            <article class="aspect-square sm:w-80 w-full relative rounded-lg overflow-hidden 3xl:col-start-3">
+            <ClubCard URL="/clubs/book-club" clubImg={NounBooks} clubName="Book Club", nextMeet="11/06/23" description="Each month the club reads a new selection and then meets to discuss the book. Books are chosen from student and staff suggestions. We read popular titles and new releases. Most of the books chosen are Young Adult fiction; occasionally we read adult titles and non-fiction. Book club members also participate in special events like author visits, lunch meetings and movie screenings." />
+            <ClubCard URL="/clubs/guys-read" clubImg={NounBooks} clubName="Guys Read", nextMeet="11/13/23" description="NHD is an academic competition for elementary and secondary school students. It focuses on historical research, interpretation, and creative expression. Students produce projects such as exhibits, documentaries, papers, performances, or websites related to a specific historical theme, which they present at local, state, and national competitions." />
+            <ClubCard URL="/clubs/writers-block" clubImg={NounPenPaper} clubName="Writers Block", nextMeet="10/16/23" description="Writer's Block is for students who are interested in sharing their writings with others. Members meet to listen, discuss, and edit. Also, members have access to the Writer's Block Blog where they can share ideas and find information on writing. You will participate in special events like author visits and lunch meetings." />
+            <ClubCard URL="/clubs/speech" clubImg={NounSpeech} clubName="Speech", nextMeet="10/23/23" description="The Speech team travels to area high schools to compete. There are a total of sixteen categories ranging from oral interpretation to acting to public speaking. As part of the Wisconsin Interscholastic Speech and Dramatic Arts Association, the team has two goals: To provide a significant training ground for the development of students' abilities in public speaking and in the oral interpretation of literature and to provide multiple opportunities for students to practice and share their skill development." />
+            <article class="aspect-square sm:w-80 w-full relative rounded-lg overflow-hidden">
                 <Image src={Books} alt="Books" class="h-full aspect-square" />
                 <div class="absolute bg-gradient-to-t from-[#0C080A]/90 from-40% to-transparent top-0 w-full h-full flex flex-col justify-end px-2 py-1">
                     <span class="text-2xl font-mono tracking-wide">Want your club here<span class="text-burgundy-800">?</span></span>
