@@ -1,7 +1,8 @@
 ---
     import Layout from "@layouts/Layout.astro";
+    const words = "Hey how are you";
 ---
 
 <Layout title="Clubs | DnD" bigText="Dnd">
-    {Astro.url.pathname.split("/")[0]}
+    {words.split(" ")[0]}
 </Layout>
