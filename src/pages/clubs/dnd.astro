@@ -1,7 +1,10 @@
 ---
     import Layout from "@layouts/Layout.astro";
+    const URL[] = Astro.url.pathname.split("/");
 ---
 
 <Layout title="Clubs | DnD" bigText="Dnd">
-
+    {URL.map((text) => (
+        <p>{text}</p>
+    )}
 </Layout>
