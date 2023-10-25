@@ -1,8 +1,8 @@
 ---
     import Layout from "@layouts/Layout.astro";
-    const URL:string = Astro.url.pathname.split("/").join(" ");
+    const URL:string = Astro.url.pathname.split("/").join(" ").split(" ");
 ---
 
 <Layout title="Clubs | DnD" bigText="Dnd">
-    {URL}
+    {URL[0]}
 </Layout>
