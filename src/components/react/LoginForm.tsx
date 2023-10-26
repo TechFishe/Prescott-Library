@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { supabase } from "src/supabase";
+// import { supabase } from "src/supabase";
 
 export default function LoginForm(){
     const [isNew, setIsNew] = useState(false);
@@ -7,16 +7,16 @@ export default function LoginForm(){
     const [pass, setPass] = useState("");
 
     //#region User Auth 
-        async function logInWithEmail(){
-            const {error} = await supabase.auth.signInWithPassword({email, password: pass});
-            if(error) throw error
-            else window.location.reload();
-        }
+        // async function logInWithEmail(){
+        //    const {error} = await supabase.auth.signInWithPassword({email, password: pass});
+        //    if(error) throw error
+        //    else window.location.reload();
+        // }
     
-        async function signUpWithEmail(){
-            const {data, error} = await supabase.auth.signUp({ email, password: pass});
-            if(error) throw error
-        }
+        // async function signUpWithEmail(){
+        //    const {data, error} = await supabase.auth.signUp({ email, password: pass});
+        //    if(error) throw error
+        // }
     
         // async function createNewUser(uuid:string){
         //     const {error} = await supabase.from("users").insert({user_id: uuid, first_name: firstName, last_name: lastName, friends: [], pfp : createAvatar(micah, {size:64, seed: uuid}).toDataUriSync()});
