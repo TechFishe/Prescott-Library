@@ -28,12 +28,12 @@ export default function LoginForm(){
         return(
             <main className="h-fullscreen w-full flex flex-col justify-center">
                 <h1 className="xl:text-8xl xl:font-black xl:tracking-widest w-full text-center">Login</h1>
-                <section className="flex flex-col items-center space-y-8 mdTall:w-2/3 2xl:w-1/3">
-                    <div>
+                <section className="flex flex-col items-center space-y-8 border mdTall:w-1/2 2xl:w-1/3">
+                    <div className="w-full border">
                         <label htmlFor="email" className="ml-2 text-2xl">Email</label>
                         <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
-                    <div>
+                    <div className="w-full border">
                         <label htmlFor="pass" className="ml-2 text-2xl">Password</label>
                         <input type="password" name="pass" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
