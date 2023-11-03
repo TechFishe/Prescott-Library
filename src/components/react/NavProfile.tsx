@@ -9,7 +9,7 @@ export default function NavProfile(){
             await supabase.auth.getUser().then((val) => {
                 if(!val.data?.user) return;
                 else getCustomUser(val.data.user.id);
-            })
+            });
         }
 
         async function getCustomUser(uuid: string){

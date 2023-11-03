@@ -1,0 +1,22 @@
+---
+    import Layout from "@layouts/Layout.astro";
+    import LoginForm from "@reactBlocks/LoginForm";
+---
+
+<Layout title="User | Login" bigText="User">
+    <LoginForm client:only="react" />
+</Layout>
+
+<script>
+    import { supabase } from "src/supabase";
+
+    async function getUser(){
+        await supabase.auth.getUser().then((val) => {
+            if(!val.data?.user) return;
+            else window.location.href = "http://localhost:4321/user/dashboard" //THIS MUST BE CHANGED BEFORE GITHUB UPDATE
+        });
+    }
+
+    getUser();
+    console.log("js")
+</script>
