@@ -22,7 +22,7 @@ export default function NavProfile(){
     }, [])
 
     return(
-        <a href="/user" className="mdTall:ml-8 border border-transparent hover:border-[#E9EDDE]/25 group px-4 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center">
+        <a href="/user" className="mdTall:ml-8 border border-transparent hover:border-[#E9EDDE]/25 group mdTall:px-5 mdTall:py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center">
             {Object.keys(user).length === 0 ?
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" className="group-hover:text-burgundy-900 transition-colors ease-in mdTall:h-5 h-6">
                     {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}

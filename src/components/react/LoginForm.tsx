@@ -6,7 +6,7 @@ import { bottts } from "@dicebear/collection";
 
 export default function LoginForm(){
     const [isNew, setIsNew] = useState(false);
-    const [screenTwo, setScreenTwo] = useState(false);
+    const [screenTwo, setScreenTwo] = useState(true);
 
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
@@ -49,11 +49,11 @@ export default function LoginForm(){
                 <section className="flex flex-col items-center space-y-4">
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="email" className="ml-2 text-2xl">Email</label>
-                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border-none focus:ring-0 text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="pass" className="ml-2 text-2xl">Password</label>
-                        <input type="password" name="pass" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="password" name="pass" value={pass} onChange={(e) => setPass(e.target.value)} className="border-none focus:ring-0 text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                 </section>
                 <section className="flex flex-col items-center mt-2">
@@ -69,15 +69,15 @@ export default function LoginForm(){
                 <section className="flex flex-col items-center space-y-4">
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="email" className="ml-2 text-2xl">Email</label>
-                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border-none focus:ring-0 text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="pass1" className="ml-2 text-2xl">Password</label>
-                        <input type="password" name="pass1" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="password" name="pass1" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-fullborder-none focus:ring-0  outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="pass2" className="ml-2 text-2xl">Confirm password</label>
-                        <input type="password" name="pass2" value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="password" name="pass2" value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)} className="border-none focus:ring-0 text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                 </section>
                 <button onClick={() => setScreenTwo(true)} disabled={email === "" || pass === "" || confirmPass === "" || pass !== confirmPass} className="border border-transparent enabled:hover:border-[#E9EDDE]/25 disabled:cursor-not-allowed disabled:text-[#E9EDDE]/75 enabled:hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 enabled:hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold mt-2 w-fit self-center">Sign up</button>
@@ -94,34 +94,34 @@ export default function LoginForm(){
                     <section className="mdTall:w-1/2 2xl:w-1/3 flex space-x-2">
                         <div className="flex flex-col flex-grow">
                             <label htmlFor="firstName" className="ml-2 text-2xl self-center">First Name</label>
-                            <input type="text" name="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                            <input type="text" name="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} className="text-xl w-full outline-none border-none focus:ring-0 bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                         </div>
                         <div className="flex flex-col flex-grow">
                             <label htmlFor="lastName" className="ml-2 text-2xl self-center">Last Name</label>
-                            <input type="text" name="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                            <input type="text" name="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} className="text-xl w-full outline-none border-none focus:ring-0 bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                         </div>
                     </section>
                     <section className="mdTall:w-1/2 2xl:w-1/3 flex space-x-2">
                         <article className="flex flex-col flex-grow w-1/2">
-                            <span className="text-2xl font-semibold">What's your gender?</span>
+                            <span className="text-center text-2xl font-semibold border-b border-[#E9EDDE]/10 w-fit pb-1 self-center px-2">What's your gender?</span>
                             <section className="flex flex-col">
                                 <section className="flex">
                                     <div className="w-1/2">
-                                        <input type="radio" name="gender" id="male" value="male" checked={gender === "male"} onChange={(e) => setGender(e.target.value)} />
+                                        <input type="radio" name="gender" id="male" value="male" checked={gender === "male"} onChange={(e) => setGender(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                         <label htmlFor="male" className="ml-2 text-xl self-center">Male</label>
                                     </div>
                                     <div className="w-1/2">
-                                        <input type="radio" name="gender" id="female" value="female" checked={gender === "female"} onChange={(e) => setGender(e.target.value)} />
+                                        <input type="radio" name="gender" id="female" value="female" checked={gender === "female"} onChange={(e) => setGender(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                         <label htmlFor="female" className="ml-2 text-xl self-center">Female</label>
                                     </div>
                                 </section>
                                 <section className="flex">
                                     <div className="w-1/2">
-                                        <input type="radio" name="gender" id="non-binary" value="non-binary" checked={gender === "non-binary"} onChange={(e) => setGender(e.target.value)} />
+                                        <input type="radio" name="gender" id="non-binary" value="non-binary" checked={gender === "non-binary"} onChange={(e) => setGender(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                         <label htmlFor="non-binary" className="ml-2 text-xl self-center">Non-binary</label>
                                     </div>
                                     <div className="w-1/2">
-                                        <input type="radio" name="gender" id="none" value="none" checked={gender === "none"} onChange={(e) => setGender(e.target.value)} />
+                                        <input type="radio" name="gender" id="none" value="none" checked={gender === "none"} onChange={(e) => setGender(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                         <label htmlFor="none" className="ml-2 text-xl self-center">Rather not say</label>
                                     </div>
                                 </section>
@@ -131,19 +131,19 @@ export default function LoginForm(){
                             <span className="text-center text-2xl font-semibold border-b border-[#E9EDDE]/10 w-fit pb-1 self-center px-2">What grade are you?</span>
                             <section className="flex justify-evenly">
                                 <div>
-                                    <input type="radio" name="grade" id="nine" value="9" checked={grade === "9"} onChange={(e) => setGrade(e.target.value)} />
+                                    <input type="radio" name="grade" id="nine" value="9" checked={grade === "9"} onChange={(e) => setGrade(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                     <label htmlFor="nine" className="ml-2 text-xl self-center">9</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="grade" id="ten" value="10" checked={grade === "10"} onChange={(e) => setGrade(e.target.value)} />
+                                    <input type="radio" name="grade" id="ten" value="10" checked={grade === "10"} onChange={(e) => setGrade(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                     <label htmlFor="ten" className="ml-2 text-xl self-center">10</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="grade" id="eleven" value="11" checked={grade === "11"} onChange={(e) => setGrade(e.target.value)} />
+                                    <input type="radio" name="grade" id="eleven" value="11" checked={grade === "11"} onChange={(e) => setGrade(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                     <label htmlFor="eleven" className="ml-2 text-xl self-center">11</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="grade" id="twelve" value="12" checked={grade === "12"} onChange={(e) => setGrade(e.target.value)} />
+                                    <input type="radio" name="grade" id="twelve" value="12" checked={grade === "12"} onChange={(e) => setGrade(e.target.value)} className="bg-[#E9EDDE]/10 text-burgundy-900 focus:ring-0 border-none" />
                                     <label htmlFor="twelve" className="ml-2 text-xl self-center">12</label>
                                 </div>
                             </section>
