@@ -1,5 +1,8 @@
 import { useState } from "react";
-// import { supabase } from "src/supabase";
+import { supabase } from "src/supabase";
+
+import { createAvatar } from "@dicebear/core";
+import { bottts } from "@dicebear/collection";
 
 export default function LoginForm(){
     const [isNew, setIsNew] = useState(false);
@@ -21,21 +24,22 @@ export default function LoginForm(){
     }
 
     //#region User Auth 
-        // async function logInWithEmail(){
-        //    const {error} = await supabase.auth.signInWithPassword({email, password: pass});
-        //    if(error) throw error
-        //    else window.location.reload();
-        // }
+        async function logInWithEmail(){
+           const {error} = await supabase.auth.signInWithPassword({email, password: pass});
+           if(error) throw error
+           else window.location.reload();
+        }
     
-        // async function signUpWithEmail(){
-        //    const {data, error} = await supabase.auth.signUp({ email, password: pass});
-        //    if(error) throw error
-        // }
+        async function signUpWithEmail(){
+           const {data, error} = await supabase.auth.signUp({ email, password: pass});
+           if(error) throw error
+           else if(data.user) createNewUser(data.user?.id); //Ignore error
+        }
     
-        // async function createNewUser(uuid:string){
-        //     const {error} = await supabase.from("users").insert({user_id: uuid, first_name: firstName, last_name: lastName, friends: [], pfp : createAvatar(micah, {size:64, seed: uuid}).toDataUriSync()});
-        //     if(error) throw error
-        // }
+        async function createNewUser(uuid:string){
+            const {error} = await supabase.from("users").insert({user_ref: uuid, first_name: firstName, last_name: lastName, gender: gender, grade: Number(grade), pfp : createAvatar(bottts, {size:64, seed: uuid}).toDataUriSync()});
+            if(error) throw error
+        }
     //#endregion
 
     if(!isNew){
@@ -53,7 +57,7 @@ export default function LoginForm(){
                     </div>
                 </section>
                 <section className="flex flex-col items-center mt-2">
-                    <button disabled={email === "" || pass === ""} className="mb-1 border border-transparent hover:border-[#E9EDDE]/25 hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold">Login</button>
+                    <button onClick={() => logInWithEmail()} disabled={email === "" || pass === ""} className="mb-1 border border-transparent hover:border-[#E9EDDE]/25 hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold">Login</button>
                     <p className="text-center mt-1 text-lg">New user? Sign up <button onClick={() => signup()} className="hover:underline underline-offset-2 decoration-burgundy-800">here</button>.</p>
                 </section>
             </main>
@@ -76,7 +80,7 @@ export default function LoginForm(){
                         <input type="password" name="pass2" value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)} className="text-xl w-full outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                 </section>
-                <button onClick={() => setScreenTwo(true)} disabled={email === "" || pass === "" || confirmPass === ""} className="border border-transparent hover:border-[#E9EDDE]/25 hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold mt-2 w-fit self-center">Sign up</button>
+                <button onClick={() => setScreenTwo(true)} disabled={email === "" || pass === "" || confirmPass === "" || pass !== confirmPass} className="border border-transparent enabled:hover:border-[#E9EDDE]/25 disabled:cursor-not-allowed disabled:text-[#E9EDDE]/75 enabled:hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 enabled:hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold mt-2 w-fit self-center">Sign up</button>
             </main>
         )
     } else if(screenTwo){
@@ -146,6 +150,7 @@ export default function LoginForm(){
                         </article>
                     </section>
                 </section>
+                <button onClick={() => signUpWithEmail()} disabled={firstName === "" || lastName === "" || gender === "" || grade === ""} className="border border-transparent enabled:hover:border-[#E9EDDE]/25 disabled:cursor-not-allowed disabled:text-[#E9EDDE]/75 enabled:hover:text-burgundy-900 group px-2 py-1 rounded-lg space-x-1 enabled:hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center mdTall:text-2xl text-lg font-semibold mt-2 w-fit self-center">Confirm</button>
             </main>
         )
     }
