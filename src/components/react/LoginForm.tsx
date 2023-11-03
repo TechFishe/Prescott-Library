@@ -6,7 +6,7 @@ import { bottts } from "@dicebear/collection";
 
 export default function LoginForm(){
     const [isNew, setIsNew] = useState(false);
-    const [screenTwo, setScreenTwo] = useState(true);
+    const [screenTwo, setScreenTwo] = useState(false);
 
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
