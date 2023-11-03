@@ -73,7 +73,7 @@ export default function LoginForm(){
                     </div>
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="pass1" className="ml-2 text-2xl">Password</label>
-                        <input type="password" name="pass1" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-fullborder-none focus:ring-0  outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
+                        <input type="password" name="pass1" value={pass} onChange={(e) => setPass(e.target.value)} className="text-xl w-full border-none focus:ring-0  outline-none bg-[#E9EDDE]/10 py-1 px-2 rounded-lg" />
                     </div>
                     <div className="mdTall:w-1/2 2xl:w-1/3">
                         <label htmlFor="pass2" className="ml-2 text-2xl">Confirm password</label>
