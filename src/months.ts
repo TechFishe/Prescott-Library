@@ -1,0 +1,37 @@
+export const months:Month[] = [{
+    name: "January",
+    num: "01"
+}, {
+    name: "February",
+    num: "02"
+}, {
+    name: "March",
+    num: "03"
+}, {
+    name: "April",
+    num: "04"
+}, {
+    name: "May",
+    num: "05"
+}, {
+    name: "June",
+    num: "06"
+}, {
+    name: "July",
+    num: "07"
+}, {
+    name: "August",
+    num: "08"
+}, {
+    name: "September",
+    num: "09"
+}, {
+    name: "October",
+    num: "10"
+}, {
+    name: "November",
+    num: "11"
+}, {
+    name: "December",
+    num: "12"
+}, ]

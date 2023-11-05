@@ -1,8 +1,8 @@
 ---
     import Layout from "@layouts/Layout.astro";
-    import { supabase } from "src/supabase";
+    import UserDash from "@components/react/UserDash";
 ---
 
 <Layout title="User | Dash" bigText="User">
-    hey
+    <UserDash client:only="react" />
 </Layout>
