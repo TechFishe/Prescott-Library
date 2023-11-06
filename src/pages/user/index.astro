@@ -13,7 +13,7 @@
     async function getUser(){
         await supabase.auth.getUser().then((val) => {
             if(!val.data?.user) return;
-            else window.location.href = "http://prescott-library.vercel.app/user/dashboard" //THIS MUST BE CHANGED BEFORE GITHUB UPDATE
+            else window.location.href = "https://prescott-library-git-supabase-start-techfishe.vercel.app/user/dashboard" //THIS MUST BE CHANGED BEFORE GITHUB UPDATE
         });
     }
 
