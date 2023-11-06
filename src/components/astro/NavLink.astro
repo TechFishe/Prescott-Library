@@ -4,10 +4,11 @@
         viewBox: string,
         text: string,
         URL: string,
-        isBlank?: boolean
+        isBlank?: boolean,
+        isClubs?: boolean
     }
 
-    const {icon, viewBox, text, URL, isBlank = false}:Props = Astro.props;
+    const {icon, viewBox, text, URL, isBlank = false, isClubs = false}:Props = Astro.props;
 ---
 {!isBlank ? 
     <a href={URL} class="border border-transparent hover:border-[#E9EDDE]/25 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center">
