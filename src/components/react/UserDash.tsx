@@ -43,7 +43,7 @@ export default function UserDash(){
     async function logout(){
         const {error} = await supabase.auth.signOut();
         if(error) throw error;
-        else window.location.href = "http://localhost:4321/user" //THIS MUST BE CHANGED BEFORE GITHUB UPDATE
+        else window.location.href = "http://prescott-library.vercel.app/user" //THIS MUST BE CHANGED BEFORE GITHUB UPDATE
     }
 
     if(dateJoined === "" && user?.joined_on){
