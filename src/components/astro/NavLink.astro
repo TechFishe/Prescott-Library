@@ -12,7 +12,7 @@
 ---
 {!isBlank ? 
     <a href={URL} class="border border-transparent hover:border-[#E9EDDE]/25 group px-2 py-1 rounded-lg space-x-1 hover:scale-[1.025] transition-all ease-in flex mdTall:flex-row flex-col items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox={`0 0 ${viewBox}`} class={`group-hover:text-burgundy-900 transition-colors ease-in mdTall:h-5 h-6 ${Astro.url.pathname === URL ? "text-burgundy-900" : ""}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox={`0 0 ${viewBox}`} class={`group-hover:text-burgundy-900 transition-colors ease-in mdTall:h-5 h-6 ${Astro.url.pathname === URL || (isClubs && Astro.url.pathname.split("/")[1] === "clubs") ? "text-burgundy-900" : ""}`}>
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path d={icon}/>
         </svg>
