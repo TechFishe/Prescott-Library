@@ -1,0 +1,18 @@
+---
+    interface Props{
+        text: string,
+        SVG: string,
+        URL: string,
+        viewBox: string
+    }
+
+    const {text, SVG, URL, viewBox}:Props = Astro.props;
+---
+
+<a href={URL} class="flex flex-col items-center space-y-1 p-1 rounded-lg aspect-square justify-center border border-transparent hover:border-[#E9EDDE]/25 group hover:scale-[1.025] transition-all ease-in">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1.75rem" viewBox={`0 0 ${viewBox}`} fill="currentColor" class="group-hover:text-burgundy-900 transition-colors ease-in">
+        {/* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
+        <path d={SVG}/>
+    </svg>
+    <span class="mdTall:text-xl font-semibold">{text}</span>
+</a>

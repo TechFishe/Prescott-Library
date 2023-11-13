@@ -4,7 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			height: {
-				'fullscreen': "calc(100vh - 8rem)"
+				'fullscreen': "calc(100vh - 8rem)",
+				'fullscreen-1/3': "calc((100vh - 8rem - 16.666667vw) / 3)",
+				'fullscreen-2/3': "calc(2 * (100vh - 8rem - 16.666667vw) / 3)"
 			},
 			minHeight: {
 				'fullscreen': "calc(100vh - 8rem)",
