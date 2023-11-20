@@ -25,3 +25,10 @@ interface Story{
     promt_id: number,
     story_id: string
 }
+
+interface Prompt{
+    id: number,
+    created_on: string,
+    prompt: string,
+    description: string
+}

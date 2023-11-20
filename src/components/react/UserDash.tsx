@@ -64,7 +64,7 @@ export default function UserDash(){
     return(
         <>
             <section className="flex">
-                <img src={user?.pfp} alt="Profile picture" className="w-1/12" />
+                <img src={user?.pfp} alt="Profile picture" className="w-1/12 aspect-square" />
                 <div className="flex flex-col px-1 justify-center">
                     <span className="border-b border-b-[#E9EDDE]/25 pb-1 px-1 text-6xl font-bold tracking-wide">{user?.first_name} {user?.last_name}</span>
                     <p className="px-1 pt-1 text-lg">Joined on: <span className="text-burgundy-700">{dateJoined}</span></p>
