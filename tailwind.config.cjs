@@ -6,7 +6,8 @@ module.exports = {
 			height: {
 				'fullscreen': "calc(100vh - 8rem)",
 				'fullscreen-1/4': "calc((100vh - 8rem - 8.333333vw) / 4)",
-				"fullscreen-1/3": "calc((100vh - 8rem - 8.333333vw) / 3)"
+				"fullscreen-1/3": "calc((100vh - 8rem - 8.333333vw) / 3)",
+				"fullscreen-club": "calc(100vh - 8rem - 8.333333vw)"
 			},
 			minHeight: {
 				'fullscreen': "calc(100vh - 8rem)",
