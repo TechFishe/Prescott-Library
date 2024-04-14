@@ -1,20 +1,11 @@
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { calanderSchema } from "./schemas";
 
 const calendarCollection = defineCollection({
-  type: 'data',
-  schema: z.array(z.object({
-    name: z.string(),
-    days: z.array(
-      z.object({
-        event: z.boolean(),
-        name: z.string().optional(),
-        time: z.string().optional(),
-        place: z.string().optional()
-      })
-    )
-  }))
+  type: "data",
+  schema: calanderSchema
 });
 
 export const collections = {
-  'calendars': calendarCollection
-}
+  calendars: calendarCollection
+};

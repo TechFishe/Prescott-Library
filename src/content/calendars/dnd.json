@@ -3,93 +3,154 @@
     "name": "May",
     "days": [
       {
+        "day": "Wednesday",
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
         "place": "Online or at Hunter's house"
-      }, {
+      },
+      {
+        "day": "Thursday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Friday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Saturday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Sunday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Monday",
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
         "place": "PHS library"
-      }, {
+      },
+      {
+        "day": "Tuesday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Wednesday",
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
         "place": "Online or at Hunter's house"
-      }, {
+      },
+      {
+        "day": "Thursday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Friday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Saturday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Sunday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Monday",
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
         "place": "PHS library"
-      }, {
+      },
+      {
+        "day": "Tuesday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Wednesday",
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
         "place": "Online or at Hunter's house"
-      }, {
+      },
+      {
+        "day": "Thursday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Friday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Saturday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Sunday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Monday",
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
         "place": "PHS library"
-      }, {
+      },
+      {
+        "day": "Tuesday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Wednesday",
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
         "place": "Online or at Hunter's house"
-      }, {
+      },
+      {
+        "day": "Thursday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Friday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Saturday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Sunday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Monday",
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
         "place": "PHS library"
-      }, {
+      },
+      {
+        "day": "Tuesday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Wednesday",
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
         "place": "Online or at Hunter's house"
-      }, {
+      },
+      {
+        "day": "Thursday",
         "event": false
-      }, {
+      },
+      {
+        "day": "Friday",
         "event": false
       }
     ]

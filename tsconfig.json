@@ -11,5 +11,5 @@
       "@reactBlocks/*": ["src/components/react/*"],
       "@assets/*": ["src/assets/*"]
     }
-  },
+  }
 }

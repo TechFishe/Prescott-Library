@@ -1,19 +1,19 @@
 ---
-    interface Props{
-        viewBox: string,
-        icon: string,
-        tag: string
-    }
+interface Props {
+  viewBox: string;
+  icon: string;
+  tag: string;
+}
 
-    const {viewBox, icon, tag}: Props = Astro.props;
+const { viewBox, icon, tag }: Props = Astro.props;
 ---
 
 <li class="tracking-tighter flex items-center">
-	<svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox={`0 0 ${viewBox}`} fill="currentColor">
-		<!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-	    <path d={icon} />
-	</svg>
-	<span class="mx-1">:</span>
-	<span class="text-burgundy-800 mr-0.5">@</span>
-    <span>{tag}</span>
+  <svg xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox={`0 0 ${viewBox}`} fill="currentColor">
+    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+    <path d={icon}></path>
+  </svg>
+  <span class="mx-1">:</span>
+  <span class="text-burgundy-800 mr-0.5">@</span>
+  <span>{tag}</span>
 </li>
