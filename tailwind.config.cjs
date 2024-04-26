@@ -4,17 +4,19 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        fullscreen: "calc(100vh - 8rem)",
+        "fullscreen": "calc(100vh - 8rem)",
         "fullscreen-1/4": "calc((100vh - 8rem - 8.333333vw) / 4)",
         "fullscreen-1/3": "calc((100vh - 8rem - 8.333333vw) / 3)",
         "fullscreen-club": "calc(100vh - 8rem - 8.333333vw)"
       },
       minHeight: {
-        fullscreen: "calc(100vh - 8rem)",
+        "fullscreen": "calc(100vh - 8rem)",
+        "fullscreen-club": "calc(100vh - 8rem - 8.333333vw)",
         "1/2": "50%"
       },
       maxHeight: {
-        fullscreen: "calc(100vh - 8rem)"
+        "fullscreen": "calc(100vh - 8rem)",
+        "fullscreen-club": "calc(100vh - 8rem - 8.333333vw)"
       },
       colors: {
         burgundy: {

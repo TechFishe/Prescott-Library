@@ -1,5 +1,5 @@
 import { defineCollection } from "astro:content";
-import { calanderSchema } from "./schemas";
+import { calanderSchema } from "./_schemas";
 
 const calendarCollection = defineCollection({
   type: "data",

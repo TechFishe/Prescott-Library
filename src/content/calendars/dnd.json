@@ -3,30 +3,15 @@
     "name": "May",
     "days": [
       {
-        "day": "Wednesday",
-        "event": true,
-        "name": "Monster Hunter",
-        "time": "6:00 PM",
-        "place": "Online or at Hunter's house"
-      },
-      {
-        "day": "Thursday",
-        "event": false
-      },
-      {
-        "day": "Friday",
-        "event": false
-      },
-      {
-        "day": "Saturday",
-        "event": false
-      },
-      {
         "day": "Sunday",
+        "light": true,
+        "date": 28,
         "event": false
       },
       {
         "day": "Monday",
+        "light": true,
+        "date": 29,
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
@@ -34,10 +19,14 @@
       },
       {
         "day": "Tuesday",
+        "light": true,
+        "date": 30,
         "event": false
       },
       {
         "day": "Wednesday",
+        "light": false,
+        "date": 1,
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
@@ -45,22 +34,32 @@
       },
       {
         "day": "Thursday",
+        "light": false,
+        "date": 2,
         "event": false
       },
       {
         "day": "Friday",
+        "light": false,
+        "date": 3,
         "event": false
       },
       {
         "day": "Saturday",
+        "light": false,
+        "date": 4,
         "event": false
       },
       {
         "day": "Sunday",
+        "light": false,
+        "date": 5,
         "event": false
       },
       {
         "day": "Monday",
+        "light": false,
+        "date": 6,
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
@@ -68,33 +67,44 @@
       },
       {
         "day": "Tuesday",
+        "light": false,
+        "date": 7,
         "event": false
       },
       {
         "day": "Wednesday",
-        "event": true,
-        "name": "Monster Hunter",
-        "time": "6:00 PM",
-        "place": "Online or at Hunter's house"
+        "light": false,
+        "date": 8,
+        "event": false
       },
       {
         "day": "Thursday",
+        "light": false,
+        "date": 9,
         "event": false
       },
       {
         "day": "Friday",
+        "light": false,
+        "date": 10,
         "event": false
       },
       {
         "day": "Saturday",
+        "light": false,
+        "date": 11,
         "event": false
       },
       {
         "day": "Sunday",
+        "light": false,
+        "date": 12,
         "event": false
       },
       {
         "day": "Monday",
+        "light": false,
+        "date": 13,
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
@@ -102,10 +112,14 @@
       },
       {
         "day": "Tuesday",
+        "light": false,
+        "date": 14,
         "event": false
       },
       {
         "day": "Wednesday",
+        "light": false,
+        "date": 15,
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
@@ -113,22 +127,32 @@
       },
       {
         "day": "Thursday",
+        "light": false,
+        "date": 16,
         "event": false
       },
       {
         "day": "Friday",
+        "light": false,
+        "date": 17,
         "event": false
       },
       {
         "day": "Saturday",
+        "light": false,
+        "date": 18,
         "event": false
       },
       {
         "day": "Sunday",
+        "light": false,
+        "date": 19,
         "event": false
       },
       {
         "day": "Monday",
+        "light": false,
+        "date": 20,
         "event": true,
         "name": "Element",
         "time": "2:00 PM",
@@ -136,10 +160,59 @@
       },
       {
         "day": "Tuesday",
+        "light": false,
+        "date": 21,
         "event": false
       },
       {
         "day": "Wednesday",
+        "light": false,
+        "date": 22,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": false,
+        "date": 23,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": false,
+        "date": 24,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 25,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 26,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": false,
+        "date": 27,
+        "event": true,
+        "name": "Element",
+        "time": "2:00 PM",
+        "place": "PHS library"
+      },
+      {
+        "day": "Tuesday",
+        "light": false,
+        "date": 28,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": false,
+        "date": 29,
         "event": true,
         "name": "Monster Hunter",
         "time": "6:00 PM",
@@ -147,10 +220,100 @@
       },
       {
         "day": "Thursday",
+        "light": false,
+        "date": 30,
         "event": false
       },
       {
         "day": "Friday",
+        "light": false,
+        "date": 31,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": true,
+        "date": 1,
+        "event": false
+      }
+    ]
+  },
+  {
+    "name": "June",
+    "days": [
+      {
+        "day": "Monday",
+        "light": true,
+        "date": 27,
+        "event": true,
+        "name": "Element",
+        "time": "2:00 PM",
+        "place": "PHS library"
+      },
+      {
+        "day": "Tuesday",
+        "light": true,
+        "date": 28,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": true,
+        "date": 29,
+        "event": true,
+        "name": "Monster Hunter",
+        "time": "6:00 PM",
+        "place": "Online or at Hunter's house"
+      },
+      {
+        "day": "Thursday",
+        "light": true,
+        "date": 30,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": true,
+        "date": 31,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 1,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 2,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": false,
+        "date": 3,
+        "event": true,
+        "name": "Element",
+        "time": "2:00 PM",
+        "place": "PHS library"
+      },
+      {
+        "day": "Tuesday",
+        "light": false,
+        "date": 4,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": false,
+        "date": 5,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": false,
+        "date": 6,
         "event": false
       }
     ]

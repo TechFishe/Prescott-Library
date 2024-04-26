@@ -6,6 +6,8 @@ export const calanderSchema = z.array(
     days: z.array(
       z.object({
         day: z.string(),
+        light: z.boolean(),
+        date: z.number(),
         event: z.boolean(),
         name: z.string().optional(),
         time: z.string().optional(),
