@@ -242,6 +242,12 @@
     "name": "June",
     "days": [
       {
+        "day": "Sunday",
+        "light": true,
+        "date": 28,
+        "event": false
+      },
+      {
         "day": "Monday",
         "light": true,
         "date": 27,
