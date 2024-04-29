@@ -1,6 +1,7 @@
 [
   {
     "name": "May",
+    "year": 2024,
     "days": [
       {
         "day": "Sunday",
@@ -240,21 +241,19 @@
   },
   {
     "name": "June",
+    "year": 2024,
     "days": [
       {
         "day": "Sunday",
         "light": true,
-        "date": 28,
+        "date": 26,
         "event": false
       },
       {
         "day": "Monday",
         "light": true,
         "date": 27,
-        "event": true,
-        "name": "Element",
-        "time": "2:00 PM",
-        "place": "PHS library"
+        "event": false
       },
       {
         "day": "Tuesday",
@@ -266,10 +265,7 @@
         "day": "Wednesday",
         "light": true,
         "date": 29,
-        "event": true,
-        "name": "Monster Hunter",
-        "time": "6:00 PM",
-        "place": "Online or at Hunter's house"
+        "event": false
       },
       {
         "day": "Thursday",
@@ -299,10 +295,7 @@
         "day": "Monday",
         "light": false,
         "date": 3,
-        "event": true,
-        "name": "Element",
-        "time": "2:00 PM",
-        "place": "PHS library"
+        "event": false
       },
       {
         "day": "Tuesday",
@@ -319,6 +312,186 @@
       {
         "day": "Thursday",
         "light": false,
+        "date": 6,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": false,
+        "date": 7,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 8,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 9,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": false,
+        "date": 10,
+        "event": false
+      },
+      {
+        "day": "Tuesday",
+        "light": false,
+        "date": 11,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": false,
+        "date": 12,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": false,
+        "date": 13,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": false,
+        "date": 14,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 15,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 16,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": false,
+        "date": 17,
+        "event": false
+      },
+      {
+        "day": "Tuesday",
+        "light": false,
+        "date": 18,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": false,
+        "date": 19,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": false,
+        "date": 20,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": false,
+        "date": 21,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 22,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 23,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": false,
+        "date": 24,
+        "event": false
+      },
+      {
+        "day": "Tuesday",
+        "light": false,
+        "date": 25,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": false,
+        "date": 26,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": false,
+        "date": 27,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": false,
+        "date": 28,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": false,
+        "date": 29,
+        "event": false
+      },
+      {
+        "day": "Sunday",
+        "light": false,
+        "date": 30,
+        "event": false
+      },
+      {
+        "day": "Monday",
+        "light": true,
+        "date": 1,
+        "event": false
+      },
+      {
+        "day": "Tuesday",
+        "light": true,
+        "date": 2,
+        "event": false
+      },
+      {
+        "day": "Wednesday",
+        "light": true,
+        "date": 3,
+        "event": false
+      },
+      {
+        "day": "Thursday",
+        "light": true,
+        "date": 4,
+        "event": false
+      },
+      {
+        "day": "Friday",
+        "light": true,
+        "date": 5,
+        "event": false
+      },
+      {
+        "day": "Saturday",
+        "light": true,
         "date": 6,
         "event": false
       }

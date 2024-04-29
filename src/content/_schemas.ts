@@ -3,6 +3,7 @@ import { z } from "astro:content";
 export const calanderSchema = z.array(
   z.object({
     name: z.string(),
+    year: z.number(),
     days: z.array(
       z.object({
         day: z.string(),

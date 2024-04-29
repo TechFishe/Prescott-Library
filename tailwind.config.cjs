@@ -12,6 +12,7 @@ module.exports = {
       minHeight: {
         "fullscreen": "calc(100vh - 8rem)",
         "fullscreen-club": "calc(100vh - 8rem - 8.333333vw)",
+        "calendar": "calc(100vh - 8rem - 8.333333vw - 48px)",
         "1/2": "50%"
       },
       maxHeight: {
